@@ -1,0 +1,43 @@
+# ============================================================
+# StrictDoc project configuration — moltenlight-systems
+# ============================================================
+#
+# StrictDoc recursively discovers every .sdoc file under the paths listed
+# in [project.include_source_paths]. Parent/child relations across files
+# resolve by UID, so documents in different folders can form a single
+# requirements graph without manual concatenation.
+#
+# Machine-readable IDs (MID) are enabled so every artifact carries a
+# stable anchor independent of its position in the file, safe for
+# renaming, moving, or renumbering.
+#
+# ------------------------------------------------------------
+# UID conventions (informational — not enforced by StrictDoc)
+# ------------------------------------------------------------
+#   STNR-NNN    Stakeholder needs / requirements        (Phase A)
+#   SYSR-NNN    System-level requirements               (Phase A)
+#   MIR-NNN     Mirror subsystem requirements           (Phase B)
+#   OTA-NNN     OTA subsystem requirements              (Phase B)
+#   MNT-NNN     Mount subsystem requirements            (Phase B)
+#   CTL-NNN     Control subsystem requirements          (Phase B)
+#   RISK-NNN    Risk register entries                   (all phases)
+#   ADR-NNN     Architecture decision records           (all phases)
+#   DOC-XXX     Document-level UIDs                     (all phases)
+# ------------------------------------------------------------
+
+[project]
+title = "Molten Light Systems"
+
+# Recursive scan — every .sdoc under docs/ is picked up.
+include_source_paths = [
+    "docs",
+]
+
+# Output location for the generated HTML.
+# Kept out of Git via .gitignore; built in CI and merged into the MkDocs site.
+path_to_output_dir = "build/strictdoc"
+
+[project.features]
+enable = [
+    "MID",
+]

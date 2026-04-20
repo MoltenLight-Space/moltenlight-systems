@@ -1,0 +1,81 @@
+[DOCUMENT]
+TITLE: Operational Needs
+UID: DOC-OPN
+VERSION: 0.1-draft
+CLASSIFICATION: Public
+
+[FREETEXT]
+This document captures the **operational needs** that the Molten Light
+telescope must satisfy, stated in natural language, without the word
+"shall". Operational needs are the raw input from which Phase A will derive
+Stakeholder Requirements (STNR-*) and subsequently System Requirements
+(SYSR-*). This document is therefore intentionally *pre-requirement*.
+
+Each entry below is a skeleton stub with UID, title, and a TODO placeholder
+for the actual need statement. The full set of needs will be populated in a
+subsequent working session, one stakeholder category at a time, using the
+stakeholder analysis as the index.
+[/FREETEXT]
+
+[REQUIREMENT]
+MID: OPN-0001-MID
+UID: STNR-001
+TITLE: Produce a 1 m-class primary mirror
+STATEMENT: >>>
+TODO — derive from mission objective 1 and the stakeholder analysis entries
+for the principal and the amateur-astronomer community. Draft should capture
+the *need* (a large aperture outside the conventional aerospace supply chain)
+without committing to implementation specifics (spin casting, borosilicate)
+which are scoping assumptions to be re-validated in Phase A trade studies.
+<<<
+RATIONALE: >>>
+TODO
+<<<
+
+[REQUIREMENT]
+MID: OPN-0002-MID
+UID: STNR-002
+TITLE: Operate the observatory autonomously
+STATEMENT: >>>
+TODO — derive from mission objective 3 and ConOps scenarios 1 and 5. Must
+include an explicit boundary on what autonomous operation means (see ConOps
+open issues). The degree of autonomy is itself a stakeholder need and
+cannot be assumed.
+<<<
+RATIONALE: >>>
+TODO
+<<<
+
+[REQUIREMENT]
+MID: OPN-0003-MID
+UID: STNR-003
+TITLE: Provide public bookable access
+STATEMENT: >>>
+TODO — derive from the AirBnObservatory vision in the mission statement
+and from stakeholder entries 2, 3, 4, and 7. This is the need that turns
+Molten Light from a private instrument into a public resource, and it
+drives requirements on the booking system, the data-delivery model, and
+the legal framework.
+<<<
+RATIONALE: >>>
+TODO
+<<<
+
+[FREETEXT]
+# TODO — additional needs to add in the next session
+
+- Public engineering record as an explicit deliverable (mission objective 4,
+  stakeholder 5 and 6).
+- Seeing-limited on-sky performance (mission success criterion 2).
+- Long operational lifetime with scheduled maintenance (mission lifetime
+  section, stakeholder 12).
+- Compliance with site-specific regulatory regime (stakeholder 8 and 9).
+- Credit and licence clarity for collaborators (stakeholder 11).
+- Data products usable by citizen-science and educational workflows
+  (stakeholders 3 and 4).
+- Safe-by-default failure behaviour across all subsystems (ConOps
+  off-nominal operations).
+
+Target count: 10 to 15 numbered needs. Add in one working session, not
+drip-fed over many.
+[/FREETEXT]

@@ -1,0 +1,58 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---------- Node ----------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json.bak
+
+# ---------- Build outputs ----------
+build/
+site/
+dist/
+output/
+_build/
+
+# StrictDoc build output
+output_html/
+
+# MkDocs build output
+/site/
+
+# ---------- Editors / IDEs ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ---------- Capella (models live here; caches do not) ----------
+*.log
+.metadata/
+*.bak
+*.orig
+
+# ---------- Secrets ----------
+.env
+.env.local
+*.pem
+*.key

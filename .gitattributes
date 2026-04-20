@@ -1,0 +1,29 @@
+# Normalise line endings across platforms.
+# Text files get LF on checkin; Git converts for Windows users on checkout.
+
+* text=auto eol=lf
+
+# Explicit text handling
+*.md          text eol=lf
+*.txt         text eol=lf
+*.sdoc        text eol=lf
+*.toml        text eol=lf
+*.yml         text eol=lf
+*.yaml        text eol=lf
+*.json        text eol=lf
+*.py          text eol=lf
+*.sh          text eol=lf
+*.html        text eol=lf
+*.css         text eol=lf
+
+# Binary files — never touch
+*.png         binary
+*.jpg         binary
+*.jpeg        binary
+*.gif         binary
+*.pdf         binary
+*.zip         binary
+
+# No Git LFS in this repository.
+# LFS-tracked assets (CAD, FEA meshes, high-res imagery) live in
+# moltenlight-hardware.

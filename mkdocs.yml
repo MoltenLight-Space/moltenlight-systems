@@ -1,0 +1,86 @@
+site_name: Molten Light Systems
+site_url: https://systems.moltenlight.space/
+site_description: >-
+  Systems engineering record for the Molten Light robotic telescope —
+  a 1 m borosilicate honeycomb primary, spin-cast, fully autonomous.
+site_author: Molten Light
+
+repo_url: https://github.com/moltenlight-space/moltenlight-systems
+repo_name: moltenlight-space/moltenlight-systems
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+    - toc.follow
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+# Phase 0 navigation only.
+# Phase A / B / C entries will be added as those stages become active —
+# Rule 1 of overhead reduction: a nav entry does not exist until it points
+# at real content.
+nav:
+  - Home: index.md
+  - Mission (Phase 0):
+      - Overview: system/00-mission/README.md
+      - Mission Statement: system/00-mission/mission-statement.md
+      - Stakeholder Analysis: system/00-mission/stakeholder-analysis.md
+      - Concept of Operations: system/00-mission/conops.md
+      - Critical Technologies: system/00-mission/critical-technologies.md
+      - Feasibility Assessment: system/00-mission/feasibility-assessment.md
+      - Business Case: system/00-mission/business-case.md
+  - Decisions:
+      - Overview: decisions/README.md
+      - ADR-000 · SE Methodology: decisions/ADR-000-se-methodology.md
+  - Risks:
+      - Overview: risks/README.md
+      - Risk Register: risks/risk-register.md
+  - Reviews:
+      - Overview: reviews/README.md
+  - ECSS Tailoring:
+      - APPLY / ADAPT / SKIP: ecss-tailoring/apply-adapt-skip.md
+      - Rationale: ecss-tailoring/rationale.md
